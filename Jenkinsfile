@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        AWS_ACCOUNT_ID="101075526478"
+        AWS_ACCOUNT_ID="756688684263"
         AWS_DEFAULT_REGION="us-east-1" 
         CLUSTER_NAME="ecs-demo-cluster-test"
         SERVICE_NAME="ecs-demo-service-test"
