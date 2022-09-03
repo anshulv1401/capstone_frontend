@@ -1,0 +1,9 @@
+docker build -f Dockerfile -t fsd-ui .
+
+docker run -it --name fsd-ui --network="host" -p 8080:8080 fsd-ui:latest
+
+
+docker run -it -d --name fsd-ui -p 8080:8080 fsd-ui:latest
+
+docker-machine ip
+run :- --network=host
