@@ -18,3 +18,9 @@ docker-machine ip
 run :- --network=host
 
 docker exec -it condescending_galois /bin/sh
+
+------------------------------------------
+
+docker build -f Dockerfile -t fsd-ui .
+
+docker run -it -d -p 3000:3000 fsd-ui:latest

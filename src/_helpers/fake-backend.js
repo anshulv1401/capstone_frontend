@@ -2,7 +2,7 @@ import { Role } from './'
 import { alertService } from '@/_services';
 
 // array in local storage for registered users
-const usersKey = 'react-signup-verification-boilerplate-users';
+const usersKey = 'react-signup-verification-capstone-users';
 let users = JSON.parse(localStorage.getItem(usersKey)) || [];
 
 export function configureFakeBackend() {

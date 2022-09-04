@@ -5,6 +5,7 @@ import { Role } from '@/_helpers';
 import { accountService } from '@/_services';
 import { Nav, PrivateRoute, Alert } from '@/_components';
 import { Home } from '@/home';
+import { Program } from '@/program';
 import { Profile } from '@/profile';
 import { Admin } from '@/admin';
 import { Account } from '@/account';
@@ -25,6 +26,7 @@ function App() {
             <Switch>
                 <Redirect from="/:url*(/+)" to={pathname.slice(0, -1)} />
                 <PrivateRoute exact path="/" component={Home} />
+                <PrivateRoute exact path="/program" component={Program} />
                 <PrivateRoute path="/profile" component={Profile} />
                 <PrivateRoute path="/admin" roles={[Role.Admin]} component={Admin} />
                 <Route path="/account" component={Account} />
